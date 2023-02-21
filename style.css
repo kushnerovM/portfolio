@@ -17,17 +17,31 @@ a {
     cursor: pointer;
 }
 
-.menu {
-    width:100%;
-    padding: 5px 5%;
+:root {
+    --size-ratio : calc(1vw + 1vh);
 }
 
+.menu {
+    position: fixed;
+    width:100%;
+    min-height: calc(var(--size-ratio) * 1.5);
+    display:flex;
+    align-items:center;
+    transition: background-color .4s ease-out;
+    backdrop-filter: blur(3px);
+}
+.menu:hover{
+    background-color: rgba(255,255,255,.7);
+}
 .menu__list {
+    width:100%;
     display:flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right:5%;
     gap: 5%;
     list-style: none;
+    font-size: calc(var(--size-ratio) * .6);
 }
 
 .menu__item>a::after {
