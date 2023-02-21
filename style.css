@@ -1,17 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-header {
-    min-height: 100vh;
-}
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Bebas Neue', sans-serif;
 }
+
 a {
     text-decoration: none;
     color: #000;
+}
+
+nav {
+    width:100%;
+    padding: 5px 5%;
+}
+
+nav > ul {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    cursor: pointer;
+}
+
+nav > ul > li > a::after {
+    display: block;
+    width:0;
+    height: 1px;
+    transition: width .2s ease-in-out;
+    content: "";
+    background-color: #000;
+}
+
+nav > ul > li > a:hover::after {
+    width: 100%;
+}
+
+header {
+    min-height: 100vh;
 }
