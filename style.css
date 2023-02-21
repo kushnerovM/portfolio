@@ -14,14 +14,15 @@ h1,h2,h3,h4,h5,h6{
 a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
-nav {
+.menu {
     width:100%;
     padding: 5px 5%;
 }
 
-nav > ul {
+.menu__list {
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -29,11 +30,7 @@ nav > ul {
     list-style: none;
 }
 
-nav > ul > li > a {
-    cursor: pointer;
-}
-
-nav > ul > li > a::after {
+.menu__item>a::after {
     display: block;
     width:0;
     height: 1px;
@@ -42,10 +39,10 @@ nav > ul > li > a::after {
     background-color: #000;
 }
 
-nav > ul > li > a:hover::after {
+.menu__item>a:hover::after {
     width: 100%;
 }
 
-header {
+.start {
     min-height: 100vh;
 }
