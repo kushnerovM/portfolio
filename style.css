@@ -92,12 +92,34 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1%;
-    margin: 5vh 0;
+    margin: 2vh 0;
+    padding: 3vh 0;
+    overflow: hidden;
 }
 
 .skill-card{
-    width: calc(var(--size-ratio) * 9);
+    width: 150px;
+    height: 200px;
     border: 1px solid black;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    transition: .2s;
+}
+
+.skill-card:hover{
+    transform: rotate(3deg) translateY(-.5rem);
+}
+
+.skill-card:hover~.skill-card{
+    transform: translateX(30px);
+}
+
+.skill-card:not(:first-child){
+    margin-left: -30px;
 }
 
 .skill-card__header{
