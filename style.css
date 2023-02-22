@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans&display=swap');
 
+:root {
+    --size-ratio : calc(1vw + 1vh);
+}
+
 *{
     margin:0;
     padding:0;
@@ -15,10 +19,6 @@ a {
     text-decoration: none;
     color: #000;
     cursor: pointer;
-}
-
-:root {
-    --size-ratio : calc(1vw + 1vh);
 }
 
 .menu {
@@ -59,4 +59,25 @@ a {
 
 .start {
     min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding : 0 5%
+}
+
+.start__header {
+    font-size: calc(var(--size-ratio)*5);
+}
+
+.start__text {
+    font-size: calc(var(--size-ratio)*2);
+}
+
+.main {
+    padding: 0 5%;
+}
+
+.section__header {
+    font-size: calc(var(--size-ratio) * 2);;
 }
