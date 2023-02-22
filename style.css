@@ -79,5 +79,33 @@ a {
 }
 
 .section__header {
-    font-size: calc(var(--size-ratio) * 2);;
+    font-size: calc(var(--size-ratio) * 2);
+}
+
+.section__text {
+    font-size: calc(var(--size-ratio) * 1);
+}
+
+.skill-container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin: 5vh 0;
+}
+
+.skill-card{
+    width: calc(var(--size-ratio) * 9);
+    border: 1px solid black;
+}
+
+.skill-card__header{
+    font-size: calc(var(--size-ratio) * 1.5);
+    text-decoration: underline;
+}
+
+.skill-card__list{
+    font-size: var(--size-ratio);
+    list-style: none;
 }
