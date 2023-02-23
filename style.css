@@ -102,10 +102,10 @@ a {
     height: 200px;
     border: 1px solid black;
     background-color: white;
-    display:flex;
+    /*display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;*/
     text-align: center;
     transition: .2s;
 }
@@ -123,6 +123,7 @@ a {
 }
 
 .skill-card__header{
+    margin: 1rem 0;
     font-size: calc(var(--size-ratio) * 1.5);
     text-decoration: underline;
 }
