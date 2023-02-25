@@ -130,3 +130,15 @@ a {
     font-size: var(--size-ratio);
     list-style: none;
 }
+
+.projects-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.project{
+    width:49%;
+    padding: 1%;
+    border: 1px solid blue;
+}
