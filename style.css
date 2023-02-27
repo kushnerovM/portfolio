@@ -172,3 +172,32 @@ a {
 .project__link:after{
     content:"→";
 }
+
+.contact-me{
+    height: 100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-me>h2{
+    font-size: calc(var(--size-ratio) * 5);
+}
+
+.contact-links{
+    min-width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-links__header{
+    font-size: calc(var(--size-ratio) * 2);
+}
+
+.contact-links__link{
+    font-size: var(--size-ratio);
+}
+
+.contact-links__get-in-touch{
+    font-size: calc(var(--size-ratio) * 1.5);
+}
