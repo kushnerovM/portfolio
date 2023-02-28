@@ -5,6 +5,7 @@
     --font-color : #F9F9ED;
     --header-color : #BCBDC0;
     --background-color : #30343f;
+    --strong-color : #F7B267;
 }
 
 *{
@@ -19,6 +20,10 @@ h1,h2,h3,h4,h5,h6{
     color: var(--header-color);
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
+}
+
+h1::first-letter{
+    color: var(--strong-color);
 }
 
 a {
@@ -69,7 +74,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding : 0 5%
+    padding : 0 5%;
+    background-color: var(--background-color);
 }
 
 .start__header {
@@ -119,6 +125,10 @@ a {
 
 .skill-card:hover{
     transform: rotate(3deg) translateY(-.5rem);
+}
+
+.skill-card:hover>.skill-card__header{
+    color: var(--strong-color);
 }
 
 .skill-card:hover~.skill-card{
@@ -175,7 +185,7 @@ a {
 .project__link{
     font-size: calc(var(--size-ratio) * 1.2);
     font-weight: 700;
-
+    color: var(--strong-color);
 }
 
 .project__link:after{
@@ -208,4 +218,12 @@ a {
 
 .contact-links__button{
     font-size: calc(var(--size-ratio) * 1.5);
+    font-weight: 700;
+    width: calc(var(--size-ratio) * 12);
+    padding: 5px 10px;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: calc(var(--size-ratio) * .6);
+    background-color: var(--strong-color);
+    color: var(--background-color);
 }
