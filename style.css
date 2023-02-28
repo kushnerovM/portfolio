@@ -2,6 +2,9 @@
 
 :root {
     --size-ratio : calc(1vw + 1vh);
+    --font-color : #fff;
+    --header-color : #aaa;
+    --background-color : #4f4f5f;
 }
 
 *{
@@ -9,16 +12,18 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--font-color);
 }
 
 h1,h2,h3,h4,h5,h6{
+    color: var(--header-color);
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--font-color);
     cursor: pointer;
 }
 
@@ -28,11 +33,10 @@ a {
     min-height: calc(var(--size-ratio) * 1.5);
     display:flex;
     align-items:center;
-    transition: background-color .4s ease-out;
-    backdrop-filter: blur(3px);
+    transition: backdrop-filter .4s ease-out;
 }
 .menu:hover{
-    background-color: rgba(255,255,255,.7);
+    backdrop-filter: blur(3px);
 }
 .menu__list {
     width:100%;
@@ -48,10 +52,10 @@ a {
 .menu__item>a::after {
     display: block;
     width:0;
-    height: 1px;
+    height: 2px;
     transition: width .2s ease-in-out;
     content: "";
-    background-color: #000;
+    background-color: var(--font-color);
 }
 
 .menu__item>a:hover::after {
@@ -59,6 +63,7 @@ a {
 }
 
 .start {
+    background-color: var(--background-color);
     min-height: 100vh;
     display:flex;
     flex-direction: column;
