@@ -82,12 +82,24 @@ a {
     background-color: var(--background-color);
 }
 
+.start__image{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(var(--size-ratio)*25);
+    height: calc(var(--size-ratio)*25);
+    z-index: 0;
+    right: 10%;
+}
+
 .start__header {
     font-size: calc(var(--size-ratio)*5);
+    z-index: 1;
 }
 
 .start__text {
     font-size: calc(var(--size-ratio)*2);
+    z-index: 1;
 }
 
 .section {
@@ -220,14 +232,16 @@ a {
     font-size: var(--size-ratio);
 }
 
-.contact-links__button{
+.contact-links__button, .codewars__link-button{
     font-size: calc(var(--size-ratio) * 1.5);
     font-weight: 700;
-    width: calc(var(--size-ratio) * 12);
-    padding: 5px 10px;
-    margin: 1rem 0;
-    text-align: center;
-    border-radius: calc(var(--size-ratio) * .6);
+    width: calc(var(--size-ratio) * 13);
+    height: calc(var(--size-ratio) * 2.3);
+   /* padding: 5px 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(var(--size-ratio) * 1.25);
     background-color: var(--strong-color);
     color: var(--background-color);
 }
