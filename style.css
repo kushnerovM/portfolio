@@ -42,7 +42,7 @@ a {
     transition: backdrop-filter .4s ease-out;
 }
 .menu:hover{
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
 }
 .menu__list {
     width:100%;
@@ -64,8 +64,12 @@ a {
     background-color: var(--font-color);
 }
 
+.menu__item>a:hover{
+    color: var(--strong-color);
+}
 .menu__item>a:hover::after {
     width: 100%;
+    background-color: var(--strong-color);
 }
 
 .start {
@@ -226,4 +230,10 @@ a {
     border-radius: calc(var(--size-ratio) * .6);
     background-color: var(--strong-color);
     color: var(--background-color);
+}
+
+.footer{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    padding: 5px;
 }
