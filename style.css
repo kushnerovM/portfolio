@@ -276,6 +276,7 @@ a {
 }
 
 .contact-links__button{
+    margin-top: 2vh;
     font-size: calc(var(--size-ratio) * 1.5);
     font-weight: 700;
     width: calc(var(--size-ratio) * 13);
