@@ -103,8 +103,8 @@ a {
 }
 
 .section {
-    padding: 0 5%;
     min-height: 100vh;
+    padding: 0 5%;
     background-color: var(--background-color);
 }
 
@@ -164,6 +164,49 @@ a {
 .skill-card__list{
     font-size: var(--size-ratio);
     list-style: none;
+}
+
+.codewars{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template: 20vmin 1fr / 30vmin 1fr;
+    place-items: center center;
+    grid-column-gap: 15vmin;
+    padding : 10vh 0;
+}
+
+.codewars__link-button {
+    align-self: start;
+    justify-self: start;
+    background-color: var(--strong-color);
+    color: var(--background-color);
+    border-radius: calc(var(--size-ratio) * 1.2);
+    width: 30vmin;
+    font-size: var(--size-ratio);
+    font-weight: 600;
+    height: 7vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codewars__img{
+    width:30vmin;
+    height: calc(30vmin / 935 * 700);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 1/span 4;
+    animation: keyboard-levitate 3s ease-in-out infinite;
+}
+
+@keyframes keyboard-levitate {
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .projects-container{
@@ -232,12 +275,11 @@ a {
     font-size: var(--size-ratio);
 }
 
-.contact-links__button, .codewars__link-button{
+.contact-links__button{
     font-size: calc(var(--size-ratio) * 1.5);
     font-weight: 700;
     width: calc(var(--size-ratio) * 13);
     height: calc(var(--size-ratio) * 2.3);
-   /* padding: 5px 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
