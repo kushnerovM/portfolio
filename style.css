@@ -111,6 +111,39 @@ a {
 
 .start__image-caption{
     font-size: calc(var(--size-ratio)*.7);
+    border-right: 2px solid var(--strong-color);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+    typing 4s steps(49) infinite alternate,
+    blinking .4s step-end infinite alternate;
+}
+
+
+/*.start__image-caption::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width:0;
+    display:block;
+    height: var(--size-ratio);
+    background-color: var(--background-color);
+    border-left: 2px solid var(--strong-color);
+    animation: typing 9s steps(50) infinite;
+}*/
+
+@keyframes blinking {
+    50%{
+        border-right: none;
+    }
+}
+
+@keyframes typing {
+0%{width:0;}
+20%{width:0;}
+60%{width: 30ch;}
+100%{width: 30ch;}
 }
 
 .start__header {
