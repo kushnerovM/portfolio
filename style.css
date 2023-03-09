@@ -280,12 +280,25 @@ a {
     align-self: flex-end;
 }
 
+.project:nth-child(2n)>.project__image{
+    border-radius:0 .6rem .6rem 0;
+    border-left: solid var(--font-color);
+    border-right: none;
+}
+
+.project:nth-child(2n)>.project__text-content{
+    border-left: 2px solid var(--font-color);
+    border-right: none;
+}
+
 .project:not(:first-child){
     margin-top: 5vmin;
 }
 
 .project__image{
-    filter: grayscale(.9) contrast(.9) brightness(.7) opacity(.4);
+    filter: grayscale(.9) contrast(.9) brightness(1.1) opacity(.4);
+    border-radius:.6rem 0 0 .6rem;
+    border-right: solid var(--font-color);
     width:49%;
     background-position: center;
     background-size: cover;
@@ -301,6 +314,7 @@ a {
     padding: 2vmin;
     display: flex;
     flex-wrap: wrap;
+    border-right: 2px solid var(--font-color);
 }
 
 .project__header{
