@@ -1,3 +1,4 @@
+/*common styles*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans&display=swap');
 
 :root {
@@ -32,6 +33,7 @@ a {
     cursor: pointer;
 }
 
+/*navigation styles*/
 .menu {
     position: fixed;
     z-index: 1000;
@@ -41,6 +43,7 @@ a {
     align-items:center;
     transition: backdrop-filter .4s ease-out;
 }
+
 .menu:hover{
     backdrop-filter: blur(5px);
 }
@@ -67,11 +70,13 @@ a {
 .menu__item>a:hover{
     color: var(--strong-color);
 }
+
 .menu__item>a:hover::after {
     width: 100%;
     background-color: var(--strong-color);
 }
 
+/*header styles*/
 .start {
     min-height: 100vh;
     display:flex;
@@ -120,19 +125,6 @@ a {
     blinking .4s step-end infinite alternate;
 }
 
-
-/*.start__image-caption::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width:0;
-    display:block;
-    height: var(--size-ratio);
-    background-color: var(--background-color);
-    border-left: 2px solid var(--strong-color);
-    animation: typing 9s steps(50) infinite;
-}*/
-
 @keyframes blinking {
     50%{
         border-right: none;
@@ -156,6 +148,7 @@ a {
     z-index: 1;
 }
 
+/*main content common styles*/
 .section {
     min-height: 100vh;
     padding: 0 5%;
@@ -170,6 +163,7 @@ a {
     font-size: calc(var(--size-ratio) * 1);
 }
 
+/*skills styles*/
 .skill-container{
     width: 100%;
     display:flex;
@@ -220,6 +214,7 @@ a {
     list-style: none;
 }
 
+/* codewars styles */
 .codewars{
     width: 100%;
     height: 50vh;
@@ -263,48 +258,73 @@ a {
     }
 }
 
+/* projects styles */
 .projects-container{
     display:flex;
-    flex-wrap: wrap;
-    gap: 2%;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .project{
-    width:49%;
+    width:80%;
     padding: 1%;
-    margin: 3vh 0;
-    min-height: 75vmin;
     display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    box-shadow: -.5rem 0 1.5rem #222222;
+    border-radius: .6rem;
+    background-color: var(--background-color);
+}
+
+.project:nth-child(2n){
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+
+.project:not(:first-child){
+    margin-top: 5vmin;
+}
+
+.project__image{
+    filter: grayscale(.9) contrast(.9) brightness(.7) opacity(.4);
+    width:49%;
+    background-position: center;
+    background-size: cover;
+    transition: filter .4s linear;
+}
+
+.project__image:hover{
+    filter:none;
+}
+
+.project__text-content{
+    width: 49%;
+    padding: 2vmin;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project__header{
     font-size: calc(var(--size-ratio) * 1.5);
-}
-
-.project__image{
     width:100%;
-    background-position: center;
-    background-size: cover;
 }
 
 .project__text{
+    width: 100%;
     font-size: var(--size-ratio);
-    min-height: calc(var(--size-ratio) * 4);
 }
 
 .project__link{
     font-size: calc(var(--size-ratio) * 1.2);
     font-weight: 700;
     color: var(--strong-color);
+    
 }
 
 .project__link:after{
     content:"→";
 }
 
+/* contacts styles */
 .contact-me{
     display:flex;
     justify-content: space-around;
@@ -343,6 +363,7 @@ a {
     color: var(--background-color);
 }
 
+/* footer styles */
 .footer{
     background-color: var(--background-color);
     color: var(--font-color);
