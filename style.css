@@ -7,6 +7,7 @@
     --header-color : #BCBDC0;
     --background-color : #30343f;
     --strong-color : #F7B267;
+    --dark-strong-color : #FF8E3D;
 }
 
 *{
@@ -229,6 +230,7 @@ a {
     align-self: start;
     justify-self: start;
     background-color: var(--strong-color);
+    background-image: linear-gradient(80deg, var(--strong-color) 0%, var(--dark-strong-color) 100%);
     color: var(--background-color);
     border-radius: calc(var(--size-ratio) * 1.2);
     width: 30vmin;
@@ -238,14 +240,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .4s linear;
+    transition: .2s linear;
 }
 
-.codewars__link-button:hover, .contact-links__button:hover{
+.codewars__link-button:hover{
     transform: scale(1.02);
     background-color: var(--background-color);
-    border: 2px solid var(--strong-color);
     color: var(--font-color);
+    text-shadow: 0 0 2px #222222;
 }
 
 .codewars__img{
@@ -338,7 +340,13 @@ a {
 .project__link{
     font-size: calc(var(--size-ratio) * 1.2);
     font-weight: 700;
-    color: var(--strong-color);
+   color: var(--strong-color);
+  background-image: linear-gradient(100deg, var(--strong-color) 0%, var(--dark-strong-color) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
     transition: .2s linear;
 }
 
@@ -356,10 +364,13 @@ a {
     display:flex;
     justify-content: space-around;
     align-items: center;
+    background: var(--strong-color);
+    background: linear-gradient(90deg, var(--strong-color) 0%, var(--dark-strong-color) 100%);
 }
 
 .contact-me>h2{
     font-size: calc(var(--size-ratio) * 5);
+    color: var(--background-color);
 }
 
 .contact-links{
@@ -370,10 +381,26 @@ a {
 
 .contact-links__header{
     font-size: calc(var(--size-ratio) * 2);
+    /* color:var(--background-color); */
+    text-shadow: 0 0 1px var(--background-color);
 }
 
 .contact-links__link{
     font-size: var(--size-ratio);
+    text-shadow: 0 0 1px var(--background-color);
+    transition: .2s ease-in;
+}
+
+.contact-links__link>i{
+    transition: .2s ease-in;
+}
+
+.contact-links__link:hover{
+    color: var(--background-color);
+}
+
+.contact-links__link:hover>i{
+    color: var(--background-color);
 }
 
 .contact-links__button{
@@ -386,11 +413,15 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: calc(var(--size-ratio) * 1.25);
-    background-color: var(--strong-color);
-    color: var(--background-color);
-    transition: .4s linear;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    transition: .2s linear;
 }
 
+.contact-links__button:hover{
+    transform: scale(1.02);
+    color: var(--strong-color);
+}
 /* footer styles */
 .footer{
     background-color: var(--background-color);
