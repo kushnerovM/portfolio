@@ -172,17 +172,27 @@ a {
     row-gap: 5vh;
     place-items: center center;
 }
+.about-grid__image-border{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;
+    position: relative;
+    border-radius: 50%;
+    width: calc(var(--size-ratio) * 9.5);
+    height: calc(var(--size-ratio) * 9.5);
+    background-color: var(--dark-strong-color);
+    background: linear-gradient(45deg, var(--dark-strong-color), var(--strong-color), var(--light-strong-color), var(--dark-strong-color), var(--strong-color));
+    background-size: 500%;
+     animation: gradient-translate 5s linear infinite; 
+}
+
 .about-grid__image{
+    position:absolute;
+    top: calc(var(--size-ratio) * .25);
+    left: calc(var(--size-ratio) * .25);
     background-size: cover;
     background-repeat: no-repeat;
     width: calc(var(--size-ratio) * 9);
     border-radius: 50%;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 3;
-}
-.about-text:not(:first-child){
-    padding-top:1em;
-    max-width: 70%;
 }
 
 /*skills styles*/
@@ -393,10 +403,10 @@ a {
     background: var(--strong-color);
     background: linear-gradient(45deg, var(--dark-strong-color), var(--strong-color), var(--light-strong-color), var(--dark-strong-color), var(--strong-color));
     background-size: 500%;
-     animation: gradient-rotate 9s linear infinite; 
+     animation: gradient-translate 9s linear infinite; 
 }
 
-@keyframes gradient-rotate{
+@keyframes gradient-translate{
     from{
         background-position: 0%;
     }
