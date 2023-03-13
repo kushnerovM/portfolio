@@ -480,7 +480,21 @@ a {
 }
 /* footer styles */
 .footer{
+    height: calc( var(--size-ratio) * 1.5);
+    font-size: var(--size-ratio);
     background-color: var(--background-color);
     color: var(--font-color);
-    padding: 5px;
+    padding: .5vmin 5%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:5%;
+}
+
+.footer>a{
+    transition: all .2s ease;
+}
+
+.footer>a:hover>i{
+    color: var(--light-strong-color);
 }
