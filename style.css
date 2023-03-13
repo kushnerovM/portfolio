@@ -164,6 +164,21 @@ a {
     font-size: calc(var(--size-ratio) * 1);
 }
 
+/* about me styles */
+.me{
+    position: absolute;
+    right: 15vmin;
+    margin-top: 5vmin;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(var(--size-ratio) * 9);
+    border-radius: 50%;
+}
+.about-text:not(:first-child){
+    padding-top:1em;
+    max-width: 70%;
+}
+
 /*skills styles*/
 .skill-container{
     width: 100%;
@@ -269,6 +284,11 @@ a {
 }
 
 /* projects styles */
+
+.my-projects{
+    padding-bottom: 5vmin;
+}
+
 .projects-container{
     display:flex;
     flex-direction: column;
@@ -362,37 +382,41 @@ a {
 /* contacts styles */
 .contact-me{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: var(--strong-color);
     background: linear-gradient(90deg, var(--strong-color) 0%, var(--dark-strong-color) 100%);
 }
 
 .contact-me>h2{
-    font-size: calc(var(--size-ratio) * 5);
+    font-size: calc(var(--size-ratio) * 10);
     color: var(--background-color);
+    line-height: .9em;
+    width:min-content;
 }
 
 .contact-links{
-    min-width: 50%;
     display:flex;
     flex-direction: column;
+    min-width: 30%;
 }
 
 .contact-links__header{
     font-size: calc(var(--size-ratio) * 2);
-    /* color:var(--background-color); */
     text-shadow: 0 0 1px var(--background-color);
+    color: var(--font-color);
+    width: max-content;
 }
 
 .contact-links__link{
+    width: max-content;
     font-size: var(--size-ratio);
     text-shadow: 0 0 1px var(--background-color);
-    transition: .2s ease-in;
+    transition: .2s linear;
 }
 
 .contact-links__link>i{
-    transition: .2s ease-in;
+    transition: .2s linear;
 }
 
 .contact-links__link:hover{
