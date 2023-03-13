@@ -8,6 +8,7 @@
     --background-color : #30343f;
     --strong-color : #F7B267;
     --dark-strong-color : #FF8E3D;
+    --light-strong-color: #FFD478;
 }
 
 *{
@@ -165,14 +166,19 @@ a {
 }
 
 /* about me styles */
-.me{
-    position: absolute;
-    right: 15vmin;
-    margin-top: 5vmin;
+.about-grid{
+    display:grid;
+    grid-template: repeat(3,auto) / 3fr 1fr;
+    row-gap: 5vh;
+    place-items: center center;
+}
+.about-grid__image{
     background-size: cover;
     background-repeat: no-repeat;
     width: calc(var(--size-ratio) * 9);
     border-radius: 50%;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;
 }
 .about-text:not(:first-child){
     padding-top:1em;
@@ -385,7 +391,18 @@ a {
     justify-content: space-between;
     align-items: center;
     background: var(--strong-color);
-    background: linear-gradient(90deg, var(--strong-color) 0%, var(--dark-strong-color) 100%);
+    background: linear-gradient(45deg, var(--dark-strong-color), var(--strong-color), var(--light-strong-color), var(--dark-strong-color), var(--strong-color));
+    background-size: 500%;
+     animation: gradient-rotate 9s linear infinite; 
+}
+
+@keyframes gradient-rotate{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 100%;
+    }
 }
 
 .contact-me>h2{
