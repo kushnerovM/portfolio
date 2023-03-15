@@ -20,6 +20,10 @@
     scroll-behavior: smooth;
 }
 
+.wrapper {
+    background-color: var(--background-color);
+}
+
 h1,h2,h3,h4,h5,h6{
     color: var(--header-color);
     font-family: 'Bebas Neue', sans-serif;

@@ -10,167 +10,174 @@
 
 </head>
 <body>
-    <nav class="menu">
-        <ul class="menu__list">
-            <li class="menu__item"><a href="#about">about</a></li>
-            <li class="menu__item"><a href="#projects">projects</a></li>
-            <li class="menu__item"><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
-    <header class="start">
-        <div class="start__image-container">
-            <img src="images/frontend-developer.png" alt="frontent developer image" class="start__image">
-            <img src="images/arrow.png" alt="arrow to image" class="start__arrow-to-image">
-            <p class="start__image-caption">I'm not an artist, so all images are AI-generated</p>
+    <div class="wrapper">
+        <div class="content">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#about">about</a></li>
+                    <li class="menu__item"><a href="#projects">projects</a></li>
+                    <li class="menu__item"><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <header class="start">
+                <div class="start__image-container">
+                    <img src="images/frontend-developer.png" alt="frontent developer image" class="start__image">
+                    <img src="images/arrow.png" alt="arrow to image" class="start__arrow-to-image">
+                    <p class="start__image-caption">I'm not an artist, so all images are AI-generated</p>
+                </div>
+                <p class="start__text">Hello there! I'm</p>
+                <h1 class="start__header">Maxim Kushnerov</h1>
+                <p class="start__text">Frontend developer</p>
+            </header>
+            <main class="main">
+                <section class="section" id="about">
+                    <h2 class="section__header">About me</h2>
+                    <section class="about-grid">
+                        <div class="about-grid__image-border"><img src="images/me.jpg" alt="photo of me" class="about-grid__image"></div>
+                        <p class="section__text about-grid__text">
+                        I graduated from the Gomel State Agrarian-Economic College, with specializing in information technology software, and received a diploma with honors.
+                        </p>
+                        <p class="section__text about-grid__text">
+                        I worked as a software technician at the Gomel meat processing plant for 3 years. There I had a wide range of duties, including corporate website administration and revision, and the development of an online store.
+                        </p>
+                        <p class="section__text about-grid__text">
+                        I chose frontend cause I see it as a dualism of art and science. I love interesting algorithms and data structures, as well as good color combinations and beautiful transitions.
+                        Although I'm just starting my frontend-way, I already have quite a few skills.
+                        </p>
+                    </section>
+                    <section class="skill-container">
+                        <article class="skill-card">
+                            <h3 class="skill-card__header">HTML</h3>
+                            <ul class="skill-card__list">
+                                <li class="skill-card__item">Semantic</li>
+                                <li class="skill-card__item">BEM</li>
+                                <li class="skill-card__item">SEO basics</li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <h3 class="skill-card__header">CSS</h3>
+                            <ul class="skill-card__list">
+                                <li class="skill-card__item">Responsive design</li>
+                                <li class="skill-card__item">Flexbox</li>
+                                <li class="skill-card__item">Grid layout</li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <h3 class="skill-card__header">JavaScript</h3>
+                            <ul class="skill-card__list">
+                                <li class="skill-card__item">DOM</li>
+                                <li class="skill-card__item">Algorithms</li>
+                                <li class="skill-card__item">Scopes</li>
+                                <li class="skill-card__item">RegExp</li>
+                                <li class="skill-card__item">Async/await</li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <h3 class="skill-card__header">Tried my hand at</h3>
+                            <ul class="skill-card__list">
+                                <li class="skill-card__item">SQL</li>
+                                <li class="skill-card__item">PHP,twig</li>
+                                <li class="skill-card__item">C#</li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <h3 class="skill-card__header">Features</h3>
+                            <ul class="skill-card__list">
+                                <li class="skill-card__item">Git/GitHub</li>
+                                <li class="skill-card__item">Photoshop/Figma</li>
+                                <li class="skill-card__item">VSCode</li>
+                                <li class="skill-card__item">English B1 (Intermediate)</li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <h3 class="skill-card__header">Now I'm learning</h3>
+                            <ul class="skill-card__list">
+                                <li class="skill-card__item">Angular</li>
+                                <li class="skill-card__item">TypeScript</li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="codewars">
+                        <img src="images/keyboard.png" alt="decorative image of a keyboard" class="codewars__img">
+                        <p class="codewars__text section__text">I also have more than 450 katas solved on codewars. It's great resource for training coding and algorithmics knowledges with with the ability to see code of other developers, review it and communicate with them.</p>
+                        <a href="https://codewars.com/users/KushnerovMA" class="codewars__link-button">codewars profile</a>
+                    </section>
+                </section>
+                <section class="section my-projects" id="projects">
+                    <h2 class="section__header">My projects</h2>
+                    <section class="projects-container">
+                        <article class="project">
+                            <img src="images/sliding-clock.jpg" alt="sliding clock image" class="project__image">
+                            <article class="project__text-content">
+                                <h3 class="project__header">sliding clock</h3>
+                                <p class="project__text">A la mechanical clock, consisting of moving columns. Opacity of digits is also configuring during the column shift.</p>
+                                <a href="https://github.com/kushnerovM/sliding-clock" class="project__link">see git repo</a>
+                            </article>
+                        </article>
+                        <article class="project">
+                            <img src="images/english.jpg" alt="english training image" class="project__image">
+                            <article class="project__text-content">
+                                <h3 class="project__header">english training</h3>
+                                <p class="project__text">Your task is to translate the words, loaded from an array. More often you mistranslate a word - more chance it will be loaded next time.</p>
+                                <a href="https://github.com/kushnerovM/english-training-assistant" class="project__link">see git repo</a>
+                            </article>
+                        </article>
+                        <article class="project">
+                            <img src="images/pomodoro.jpg" alt="pomodoro image" class="project__image">
+                            <article class="project__text-content">
+                                <h3 class="project__header">Pomodoro</h3>
+                                <p class="project__text">Pomodoro technique timer with ability to set duration and count of sessions and breaks, pause and reset time.</p>
+                                <a href="https://github.com/kushnerovM/pomodoro" class="project__link">see git repo</a>
+                            </article>
+                        </article>
+                        <article class="project">
+                            <img src="images/todo.jpg" alt="todo list image" class="project__image">
+                            <article class="project__text-content">
+                                <h3 class="project__header">todo list</h3>
+                                <p class="project__text">Default todo list: just adding new task, and complite it or remove it from the queue.</p>
+                                <a href="https://github.com/kushnerovM/todo-list" class="project__link">see git repo</a>
+                            </article>
+                        </article>
+                        <article class="project">
+                            <img src="images/cv.jpg" alt="CV image" class="project__image">
+                            <article class="project__text-content">
+                                <h3 class="project__header">CV</h3>
+                                <p class="project__text">Just a CV,created via html and css. Used highlight.js for styling of pieces of code.</p>
+                                <a href="https://github.com/kushnerovM/rsschool-cv" class="project__link">see git repo</a>
+                            </article>
+                        </article>
+                        <article class="project">
+                            <img src="images/lev.jpg" alt="sytyy lev image" class="project__image">
+                            <article class="project__text-content">
+                                <h3 class="project__header">Sytyy lev</h3>
+                                <p class="project__text">Development, deployment and SEO of a food delivery website(ocStore 3.0 based)</p>
+                                <a href="https://sytyylev.by" class="project__link">see the website</a>
+                            </article>
+                        </article>
+                    </section>
+                </section>
+                <section class="section contact-me" id="contact">
+                    <h2 class="section__header">Contact me</h2>
+                    <section class="contact-links">
+                        <h3 class="contact-links__header">Find me on</h3>
+                        <a href="https://linkedin.com/in/kushnerovm" class="contact-links__link"><i class="fa-brands fa-linkedin"></i>linkedIn</a>
+                        <a href="https://www.instagram.com/00kushnerov" class="contact-links__link"><i class="fa-brands fa-instagram"></i>instagram</a>
+                        <a href="https://github.com/kushnerovM" class="contact-links__link"><i class="fa-brands fa-github"></i>gitHub</a>
+                        <a href="mailto:kushnerovmaks@mail.ru" class="contact-links__button">get in touch</a>
+                        <a href="files/kushnerov-maxim.pdf" download="kushnerov-maxim" class="contact-links__button" target="_blank">download CV</a>
+                        
+                    </section>
+                </section>
+            </main>
+            <footer class="footer">
+                <p class="footer__text">© 2023 by Maxim Kushnerov</p>
+                <a href="#top" class="to-top"><i class="fa-solid fa-chevron-up"></i></a>
+            </footer>
         </div>
-        <p class="start__text">Hello there! I'm</p>
-        <h1 class="start__header">Maxim Kushnerov</h1>
-        <p class="start__text">Frontend developer</p>
-    </header>
-    <main class="main">
-        <section class="section" id="about">
-            <h2 class="section__header">About me</h2>
-            <section class="about-grid">
-                <div class="about-grid__image-border"><img src="images/me.jpg" alt="photo of me" class="about-grid__image"></div>
-                <p class="section__text about-grid__text">
-                I graduated from the Gomel State Agrarian-Economic College, with specializing in information technology software, and received a diploma with honors.
-                </p>
-                <p class="section__text about-grid__text">
-                I worked as a software technician at the Gomel meat processing plant for 3 years. There I had a wide range of duties, including corporate website administration and revision, and the development of an online store.
-                </p>
-                <p class="section__text about-grid__text">
-                I chose frontend cause I see it as a dualism of art and science. I love interesting algorithms and data structures, as well as good color combinations and beautiful transitions.
-                Although I'm just starting my frontend-way, I already have quite a few skills.
-                </p>
-            </section>
-            <section class="skill-container">
-                <article class="skill-card">
-                    <h3 class="skill-card__header">HTML</h3>
-                    <ul class="skill-card__list">
-                        <li class="skill-card__item">Semantic</li>
-                        <li class="skill-card__item">BEM</li>
-                        <li class="skill-card__item">SEO basics</li>
-                    </ul>
-                </article>
-                <article class="skill-card">
-                    <h3 class="skill-card__header">CSS</h3>
-                    <ul class="skill-card__list">
-                        <li class="skill-card__item">Responsive design</li>
-                        <li class="skill-card__item">Flexbox</li>
-                        <li class="skill-card__item">Grid layout</li>
-                    </ul>
-                </article>
-                <article class="skill-card">
-                    <h3 class="skill-card__header">JavaScript</h3>
-                    <ul class="skill-card__list">
-                        <li class="skill-card__item">DOM</li>
-                        <li class="skill-card__item">Algorithms</li>
-                        <li class="skill-card__item">Scopes</li>
-                        <li class="skill-card__item">RegExp</li>
-                        <li class="skill-card__item">Async/await</li>
-                    </ul>
-                </article>
-                <article class="skill-card">
-                    <h3 class="skill-card__header">Tried my hand at</h3>
-                    <ul class="skill-card__list">
-                        <li class="skill-card__item">SQL</li>
-                        <li class="skill-card__item">PHP,twig</li>
-                        <li class="skill-card__item">C#</li>
-                    </ul>
-                </article>
-                <article class="skill-card">
-                    <h3 class="skill-card__header">Features</h3>
-                    <ul class="skill-card__list">
-                        <li class="skill-card__item">Git/GitHub</li>
-                        <li class="skill-card__item">Photoshop/Figma</li>
-                        <li class="skill-card__item">VSCode</li>
-                        <li class="skill-card__item">English B1 (Intermediate)</li>
-                    </ul>
-                </article>
-                <article class="skill-card">
-                    <h3 class="skill-card__header">Now I'm learning</h3>
-                    <ul class="skill-card__list">
-                        <li class="skill-card__item">Angular</li>
-                        <li class="skill-card__item">TypeScript</li>
-                    </ul>
-                </article>
-            </section>
-            <section class="codewars">
-                <img src="images/keyboard.png" alt="decorative image of a keyboard" class="codewars__img">
-                <p class="codewars__text section__text">I also have more than 450 katas solved on codewars. It's great resource for training coding and algorithmics knowledges with with the ability to see code of other developers, review it and communicate with them.</p>
-                <a href="https://codewars.com/users/KushnerovMA" class="codewars__link-button">codewars profile</a>
-            </section>
-        </section>
-        <section class="section my-projects" id="projects">
-            <h2 class="section__header">My projects</h2>
-            <section class="projects-container">
-                <article class="project">
-                    <img src="images/sliding-clock.jpg" alt="sliding clock image" class="project__image">
-                    <article class="project__text-content">
-                        <h3 class="project__header">sliding clock</h3>
-                        <p class="project__text">A la mechanical clock, consisting of moving columns. Opacity of digits is also configuring during the column shift.</p>
-                        <a href="https://github.com/kushnerovM/sliding-clock" class="project__link">see git repo</a>
-                    </article>
-                </article>
-                <article class="project">
-                    <img src="images/english.jpg" alt="english training image" class="project__image">
-                    <article class="project__text-content">
-                        <h3 class="project__header">english training</h3>
-                        <p class="project__text">Your task is to translate the words, loaded from an array. More often you mistranslate a word - more chance it will be loaded next time.</p>
-                        <a href="https://github.com/kushnerovM/english-training-assistant" class="project__link">see git repo</a>
-                    </article>
-                </article>
-                <article class="project">
-                    <img src="images/pomodoro.jpg" alt="pomodoro image" class="project__image">
-                    <article class="project__text-content">
-                        <h3 class="project__header">Pomodoro</h3>
-                        <p class="project__text">Pomodoro technique timer with ability to set duration and count of sessions and breaks, pause and reset time.</p>
-                        <a href="https://github.com/kushnerovM/pomodoro" class="project__link">see git repo</a>
-                    </article>
-                </article>
-                <article class="project">
-                    <img src="images/todo.jpg" alt="todo list image" class="project__image">
-                    <article class="project__text-content">
-                        <h3 class="project__header">todo list</h3>
-                        <p class="project__text">Default todo list: just adding new task, and complite it or remove it from the queue.</p>
-                        <a href="https://github.com/kushnerovM/todo-list" class="project__link">see git repo</a>
-                    </article>
-                </article>
-                <article class="project">
-                    <img src="images/cv.jpg" alt="CV image" class="project__image">
-                    <article class="project__text-content">
-                        <h3 class="project__header">CV</h3>
-                        <p class="project__text">Just a CV,created via html and css. Used highlight.js for styling of pieces of code.</p>
-                        <a href="https://github.com/kushnerovM/rsschool-cv" class="project__link">see git repo</a>
-                    </article>
-                </article>
-                <article class="project">
-                    <img src="images/lev.jpg" alt="sytyy lev image" class="project__image">
-                    <article class="project__text-content">
-                        <h3 class="project__header">Sytyy lev</h3>
-                        <p class="project__text">Development, deployment and SEO of a food delivery website(ocStore 3.0 based)</p>
-                        <a href="https://sytyylev.by" class="project__link">see the website</a>
-                    </article>
-                </article>
-            </section>
-        </section>
-        <section class="section contact-me" id="contact">
-            <h2 class="section__header">Contact me</h2>
-            <section class="contact-links">
-                <h3 class="contact-links__header">Find me on</h3>
-                <a href="https://linkedin.com/in/kushnerovm" class="contact-links__link"><i class="fa-brands fa-linkedin"></i>linkedIn</a>
-                <a href="https://www.instagram.com/00kushnerov" class="contact-links__link"><i class="fa-brands fa-instagram"></i>instagram</a>
-                <a href="https://github.com/kushnerovM" class="contact-links__link"><i class="fa-brands fa-github"></i>gitHub</a>
-                <a href="mailto:kushnerovmaks@mail.ru" class="contact-links__button">get in touch</a>
-                <a href="files/kushnerov-maxim.pdf" download="kushnerov-maxim" class="contact-links__button" target="_blank">download CV</a>
-                
-            </section>
-        </section>
-    </main>
-    <footer class="footer">
-        <p class="footer__text">© 2023 by Maxim Kushnerov</p>
-        <a href="#top" class="to-top"><i class="fa-solid fa-chevron-up"></i></a>
-    </footer>
+    </div>
+    <script src="/plugins/gsap.min.js"></script>
+    <script src="/plugins/ScrollSmoother.min.js"></script>
+    <script src="/plugins/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
