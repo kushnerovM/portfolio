@@ -47,12 +47,18 @@ a {
     min-height: calc(var(--size-ratio) * 1.5);
     display:flex;
     align-items:center;
-    transition: backdrop-filter .4s ease-out;
+    transition: .4s linear;
+    backdrop-filter: blur(5px);
 }
 
 .menu:hover{
-    backdrop-filter: blur(5px);
+    background-color: rgba(249,249,237,.6);
 }
+
+.menu:hover a{
+    color: var(--background-color);
+}
+
 .menu__list {
     width:100%;
     display:flex;
@@ -70,16 +76,11 @@ a {
     height: 2px;
     transition: width .2s ease-in-out;
     content: "";
-    background-color: var(--font-color);
-}
-
-.menu__item>a:hover{
-    color: var(--strong-color);
 }
 
 .menu__item>a:hover::after {
     width: 100%;
-    background-color: var(--strong-color);
+    background-color: var(--background-color);
 }
 
 /*header styles*/
