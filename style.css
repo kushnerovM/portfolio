@@ -11,6 +11,10 @@
     --light-strong-color: #FFD478;
 }
 
+body{
+    background-color: var(--background-color);
+}
+
 *{
     margin:0;
     padding:0;
