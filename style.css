@@ -578,6 +578,11 @@ a {
         order:1;
     }
 
+    .start__image{
+       animation: none;
+    }
+
+
     .start:not(:first-child){
         order:2;
     }
