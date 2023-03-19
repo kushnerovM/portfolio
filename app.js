@@ -4,6 +4,8 @@ const AID = ['about','projects','contact'];
 //selectors
 let links = document.querySelector(".menu__list").querySelectorAll("a");
 let projectsList = document.querySelectorAll(".project");
+const menuBtn = document.querySelector(".menu__button");
+const menuList = document.querySelector(".menu__list");
 
 //desctop animations
 if(!ScrollTrigger.isTouch){
@@ -24,8 +26,8 @@ if(!ScrollTrigger.isTouch){
 		opacity: 0,
 		scrollTrigger: {
 			trigger: '.start__image-container',
-			start: 'center',
-			end: 'bottom',
+			start: '30%',
+			end: '80%',
 			scrub: true
 		}
 	});
@@ -46,4 +48,22 @@ if(!ScrollTrigger.isTouch){
         })
     });
 }
+
+//mobile animations
+menuBtn.addEventListener("click",()=>{
+  if(!menuList.classList.contains("menu__list__active")){
+    menuList.classList.add("menu__list__active");
+    menuBtn.innerHTML="<i class=\"fa-solid fa-xmark\"></i>";
+  } else{
+    menuList.classList.remove("menu__list__active");
+    menuBtn.innerHTML="<i class=\"fa-solid fa-bars\"></i>";
+  }
+})
+
+links.forEach((li)=>li.addEventListener("click",()=>{
+    if(menuList.classList.contains("menu__list__active")){
+        menuList.classList.remove("menu__list__active");
+        menuBtn.innerHTML="<i class=\"fa-solid fa-bars\"></i>";
+      }
+}));
 
