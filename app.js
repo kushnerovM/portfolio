@@ -5,7 +5,7 @@ const AID = ['about','projects','contact'];
 let links = document.querySelector(".menu__list").querySelectorAll("a");
 let projectsList = document.querySelectorAll(".project");
 const menuBtn = document.querySelector(".menu__button");
-const menuList = document.querySelector(".menu__list");
+const menuList = document.querySelector(".menu");
 
 //desctop animations
 if(!ScrollTrigger.isTouch){
