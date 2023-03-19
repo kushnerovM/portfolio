@@ -111,7 +111,6 @@ a {
     background-size: cover;
     width: calc(var(--size-ratio)*25);
     height: calc(var(--size-ratio)*25);
-    top:0;
     animation: levitate 7s ease-in-out infinite;
 }
 
@@ -513,6 +512,10 @@ a {
         right: 10%;
     }
 
+    .start__image{
+        top:0;
+    }
+
 }
 /* tablet xtyles */
 @media (min-width: 520px) and (max-width: 920px){
@@ -528,6 +531,10 @@ a {
     .start__image-container{
         position: absolute;
         right: 10%;
+    }
+
+    .start__image{
+        top:0;
     }
 
 }
@@ -577,11 +584,6 @@ a {
     .start__image-container{
         order:1;
     }
-
-    .start__image{
-       animation: none;
-    }
-
 
     .start:not(:first-child){
         order:2;
