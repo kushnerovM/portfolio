@@ -549,10 +549,10 @@ a {
     }
 
     .menu__button{
-        z-index: 100000;
-        position: absolute;
+        z-index: 9999;
+        position: fixed;
         top: 5vmin;
-        right: 5vmin;
+        right: 20vmin;
         display:block;
         border:none;
         cursor: pointer;
