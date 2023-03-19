@@ -552,7 +552,7 @@ a {
         z-index: 9999;
         position: fixed;
         top: 5vmin;
-        right: 20vmin;
+        right: 5vmin;
         display:block;
         border:none;
         cursor: pointer;
