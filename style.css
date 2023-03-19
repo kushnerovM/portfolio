@@ -569,5 +569,17 @@ a {
         transform: translatex(0);
     }
    
+    .start{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .start__image-container{
+        order:1;
+    }
+
+    .start:not(:first-child){
+        order:2;
+    }
 
 }
