@@ -613,4 +613,9 @@ a {
     .start__header {
             font-size: calc(var(--size-ratio)*4);
     }
+
+    .contact-me{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
