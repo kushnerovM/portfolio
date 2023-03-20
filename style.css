@@ -614,6 +614,20 @@ a {
             font-size: calc(var(--size-ratio)*4);
     }
 
+     .about-grid__text{
+        grid-column: 1 / span 2;
+    } 
+
+    .about-grid__text:nth-child(2){
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .about-grid__image-border{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1
+    }
+
     .contact-me{
         flex-direction: column;
         justify-content: space-evenly;
