@@ -583,10 +583,19 @@ a {
     .start{
         justify-content: center;
         align-items: center;
+        padding: 0;
+    }  
+    .start__image{
+        position: static;
+        align-self: center;
     }
 
+
+
     .start__image-container{
-        order:1;
+        width: 90vw;
+        height: 100vw;
+        order: 1;
     }
 
     .start:not(:first-child){
@@ -596,7 +605,12 @@ a {
     @keyframes typing {
         0%{width:0;}
         20%{width:0;}
-        60%{width: 45ch;}
-        100%{width: 45ch;}
-        }
+        60%{width: 30ch;}
+        100%{width: 30ch;}
+        
+    }
+
+    .start__header {
+            font-size: calc(var(--size-ratio)*4);
+    }
 }
