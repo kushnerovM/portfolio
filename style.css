@@ -242,7 +242,7 @@ a {
 /* codewars styles */
 .codewars{
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     display: grid;
     grid-template: 20vmin 1fr / 30vmin 1fr;
     place-items: center center;
@@ -678,6 +678,28 @@ a {
 
     .skill-card:nth-child(n+3){
         margin-top: 5%;
+    }
+
+    .codewars{
+        grid-template: 1fr 20vmin / 30vmin 1fr;
+        column-gap: 5vmin;
+        row-gap: 7vmin;
+        padding: 5vmin 0;
+    }
+
+    .codewars__img{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    .codewars__text{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    .codewars__link-button{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
     }
 
     .projects-container{
