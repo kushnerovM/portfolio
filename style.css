@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans&display=swap');
 
 :root {
-    --size-ratio : calc(1vw + 1vh);
+    --size-ratio : 1.25em;
     --font-color : #F9F9ED;
     --header-color : #BCBDC0;
     --background-color : #30343f;
@@ -53,7 +53,7 @@ a {
     align-items:center;
     transition: .4s linear;
     backdrop-filter: blur(5px);
-    font-size: calc(var(--size-ratio) * .6);
+    font-size: calc(var(--size-ratio) * .9);
 }
 
 .menu__button{
@@ -119,7 +119,7 @@ a {
 }
 
 .start__image-caption{
-    font-size: calc(var(--size-ratio)*.7);
+    font-size: calc(var(--size-ratio)*.8);
     border-right: 2px solid var(--strong-color);
     overflow: hidden;
     white-space: nowrap;
@@ -142,7 +142,7 @@ a {
 }
 
 .start__header {
-    font-size: calc(var(--size-ratio)*5);
+    font-size: calc(var(--size-ratio)*6.5);
     z-index: 1;
 }
 
@@ -163,11 +163,11 @@ a {
 }
 
 .section__header {
-    font-size: calc(var(--size-ratio) * 2);
+    font-size: calc(var(--size-ratio) * 4);
 }
 
 .section__text {
-    font-size: calc(var(--size-ratio) * 1);
+    font-size: calc(var(--size-ratio) * 1.2);
 }
 
 /* about me styles */
@@ -230,19 +230,18 @@ a {
 
 .skill-card__header{
     margin: 1rem 0;
-    font-size: calc(var(--size-ratio) * 1.5);
+    font-size: calc(var(--size-ratio) * 1.7);
     text-decoration: underline;
 }
 
 .skill-card__list{
-    font-size: var(--size-ratio);
+    font-size: calc(var(--size-ratio) * 1.2);
     list-style: none;
 }
 
 /* codewars styles */
 .codewars{
     width: 100%;
-    /* height: 50vh; */
     display: grid;
     grid-template: 20vmin 1fr / 30vmin 1fr;
     place-items: center center;
@@ -257,8 +256,9 @@ a {
     background-image: linear-gradient(80deg, var(--strong-color) 0%, var(--dark-strong-color) 100%);
     color: var(--background-color);
     border-radius: calc(var(--size-ratio) * 1.2);
-    width: 30vmin;
-    font-size: var(--size-ratio);
+    min-width: 30vmin;
+    padding: 0 2vmin;
+    font-size: calc(var(--size-ratio) * 1.2);
     font-weight: 600;
     height: 7vmin;
     display: flex;
@@ -341,17 +341,17 @@ a {
 }
 
 .project__header{
-    font-size: calc(var(--size-ratio) * 1.5);
+    font-size: calc(var(--size-ratio) * 2);
     width:100%;
 }
 
 .project__text{
     width: 100%;
-    font-size: var(--size-ratio);
+    font-size: calc(var(--size-ratio) * 1.2);
 }
 
 .project__link{
-    font-size: calc(var(--size-ratio) * 1.2);
+    font-size: calc(var(--size-ratio) * 1.5);
     font-weight: 700;
    color: var(--strong-color);
   background-image: linear-gradient(100deg, var(--strong-color) 0%, var(--dark-strong-color) 100%);
@@ -406,7 +406,7 @@ a {
 }
 
 .contact-links__header{
-    font-size: calc(var(--size-ratio) * 2);
+    font-size: calc(var(--size-ratio) * 3);
     text-shadow: 0 0 1px var(--background-color);
     color: var(--font-color);
     width: max-content;
@@ -414,7 +414,7 @@ a {
 
 .contact-links__link{
     width: max-content;
-    font-size: var(--size-ratio);
+    font-size: calc(var(--size-ratio) * 1.5);
     text-shadow: 0 0 1px var(--background-color);
     transition: .2s linear;
 }
@@ -435,8 +435,8 @@ a {
     margin-top: 2vh;
     font-size: calc(var(--size-ratio) * 1.5);
     font-weight: 700;
-    width: calc(var(--size-ratio) * 13);
-    height: calc(var(--size-ratio) * 2.3);
+    width: calc(var(--size-ratio) * 8);
+    height: calc(var(--size-ratio) * 2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -453,7 +453,7 @@ a {
 /* footer styles */
 .footer{
     height: calc( var(--size-ratio) * 1.5);
-    font-size: var(--size-ratio);
+    font-size: calc( var(--size-ratio) * 1.2);
     background-color: var(--background-color);
     color: var(--font-color);
     padding: .5vmin 5%;
@@ -578,6 +578,9 @@ a {
 }
 /* mobile styles */
 @media (max-width: 519px){
+
+
+
     .menu{
         width: 100%;
         height: 100vh;
