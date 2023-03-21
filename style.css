@@ -579,7 +579,9 @@ a {
 /* mobile styles */
 @media (max-width: 519px){
 
-
+    :root{
+        --size-ratio : 1em;
+    }
 
     .menu{
         width: 100%;
@@ -625,6 +627,8 @@ a {
     .start__image{
         position: static;
         align-self: center;
+        width: calc(var(--size-ratio)*16);
+        height: calc(var(--size-ratio)*16);
     }
 
     .start__image-container{
@@ -643,8 +647,12 @@ a {
     }
 
     .start__header {
-            font-size: calc(var(--size-ratio)*4);
+            font-size: calc(var(--size-ratio)*3.5);
     }
+
+    .start__text {
+        font-size: calc(var(--size-ratio)*1.6);
+}
 
     .about-grid{
         grid-template: repeat(3,auto) / 1fr 3fr;
@@ -662,7 +670,16 @@ a {
 
     .about-grid__image-border{
         grid-column: 1 / span 1;
-        grid-row: 1 / span 1
+        grid-row: 1 / span 1;
+        width: calc(var(--size-ratio) * 7.5);
+        height: calc(var(--size-ratio) * 7.5);
+    }
+
+    .about-grid__image {
+        position: absolute;
+        top: calc(var(--size-ratio) * .25);
+        left: calc(var(--size-ratio) * .25);
+        width: calc(var(--size-ratio) * 7);
     }
 
     .skill-container{
@@ -703,6 +720,8 @@ a {
     .codewars__link-button{
         grid-row: 2 / span 1;
         grid-column: 2 / span 1;
+        padding: 2vmin 4vmin;
+        min-height: 8vmin;
     }
 
     .projects-container{
@@ -732,5 +751,9 @@ a {
     .contact-me{
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .contact-me>h2 {
+        font-size: calc(var(--size-ratio) * 6);
     }
 }
