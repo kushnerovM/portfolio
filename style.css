@@ -215,7 +215,7 @@ a {
 .skill-card{
     width: 17%;
     min-width: 120px;
-    min-height: calc(var(--size-ratio) * 13);
+    min-height: calc(var(--size-ratio) * 18);
     background-color: var(--background-color);
     box-shadow: -.5rem 0 1.5rem #222222;
     border-radius: .6rem;
@@ -690,6 +690,7 @@ a {
     .skill-card{
         width: 45%;
         box-shadow: -.2rem 0 .6rem #222222;
+        min-height: calc(var(--size-ratio) * 15);
     }
     
     .skill-card:not(:first-child){
