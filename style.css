@@ -377,6 +377,7 @@ a {
 .contact-me{
     display:flex;
     justify-content: space-between;
+    padding-bottom: 10vmin;
     align-items: center;
     background: var(--strong-color);
     background: linear-gradient(45deg, var(--dark-strong-color), var(--strong-color), var(--light-strong-color), var(--dark-strong-color), var(--strong-color));
