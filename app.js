@@ -32,6 +32,28 @@ if(!ScrollTrigger.isTouch){
 		}
 	});
 
+  gsap.fromTo('#about>.section__header', {color: getComputedStyle(document.documentElement).getPropertyValue('--dark-strong-color'), clipPath: "polygon(0% 50%, 100% 0%, 100% 0%, 0% 50%)" }, {
+    color: getComputedStyle(document.documentElement).getPropertyValue('--header-color'),
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+		scrollTrigger: {
+			trigger: '#about',
+			 start: '-40%',
+			 end: '-10%',
+			scrub: true
+		}
+	});
+
+  gsap.fromTo('#projects>.section__header', {color: getComputedStyle(document.documentElement).getPropertyValue('--dark-strong-color'), clipPath: "polygon(0% 100%, 100% 50%,100% 50%, 0% 100%)" }, {
+    color: getComputedStyle(document.documentElement).getPropertyValue('--header-color'),
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+		scrollTrigger: {
+			trigger: '#projects',
+			 start: '-30%',
+			 end: '-0%',
+			scrub: true
+		}
+	});
+
     projectsList.forEach((project,index)=>{
         gsap.fromTo(project,{
             opacity: .2,
