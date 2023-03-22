@@ -663,6 +663,7 @@ a {
 
      .about-grid__text{
         grid-column: 1 / span 2;
+        text-align: justify;
     } 
 
     .about-grid__text:nth-child(2){
