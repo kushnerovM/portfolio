@@ -380,7 +380,7 @@ a {
     padding-bottom: 10vmin;
     align-items: center;
     background: var(--strong-color);
-    background: linear-gradient(45deg, var(--dark-strong-color), var(--strong-color), var(--light-strong-color), var(--dark-strong-color), var(--strong-color));
+    background: linear-gradient(90deg, var(--dark-strong-color), var(--strong-color), var(--light-strong-color), var(--dark-strong-color), var(--strong-color));
     background-size: 500%;
      animation: gradient-translate 9s linear infinite; 
 }
