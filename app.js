@@ -34,14 +34,14 @@ if(!ScrollTrigger.isTouch){
 
     projectsList.forEach((project,index)=>{
         gsap.fromTo(project,{
-            opacity: .5,
+            opacity: .2,
             x: index%2?100:-100
         },{
             opacity:1,
             x: 0,
             scrollTrigger: {
 				trigger: project,
-                start: '-150%',
+                start: '-250%',
 				end: 'top',
 				scrub: true
 			}

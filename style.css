@@ -312,6 +312,7 @@ a {
     box-shadow: -.5rem 0 1.5rem #222222;
     border-radius: .6rem;
     background-color: var(--background-color);
+    will-change: transform;
 }
 
 .project:not(:first-child){
@@ -684,11 +685,12 @@ a {
 
     .skill-container{
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        overflow: visible;
     }
     
     .skill-card{
-        width: 45%;
+        width: 48%;
         box-shadow: -.2rem 0 .6rem #222222;
         min-height: calc(var(--size-ratio) * 15);
     }
@@ -721,8 +723,10 @@ a {
     .codewars__link-button{
         grid-row: 2 / span 1;
         grid-column: 2 / span 1;
-        padding: 2vmin 4vmin;
-        min-height: 8vmin;
+        align-self: center;
+        justify-self: center;
+        height: 10vmin;
+        min-width: 45vmin;
     }
 
     .projects-container{
@@ -732,6 +736,7 @@ a {
     .project{
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .project__image{
@@ -747,6 +752,11 @@ a {
         border-left: 2px solid var(--font-color);
         border-right: 2px solid var(--font-color);
         border-radius: 0 0 .6rem .6rem;
+        text-align: justify;
+    }
+
+    .project__text, .project__link{
+        padding-top:5vmin;
     }
 
     .contact-me{
