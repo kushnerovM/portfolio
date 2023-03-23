@@ -88,4 +88,3 @@ links.forEach((li)=>li.addEventListener("click",()=>{
         menuBtn.innerHTML="<i class=\"fa-solid fa-bars\"></i>";
       }
 }));
-

@@ -209,13 +209,14 @@ a {
     gap: 1%;
     margin: 2vh 0;
     padding: 4vh 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .skill-card{
     width: 17%;
     min-width: 120px;
-    min-height: calc(var(--size-ratio) * 18);
+    /* min-height: calc(var(--size-ratio) * 18); */
+    padding-bottom: 5vmin;
     background-color: var(--background-color);
     box-shadow: -.5rem 0 1.5rem #222222;
     border-radius: .6rem;
@@ -695,6 +696,7 @@ a {
         width: 48%;
         box-shadow: -.2rem 0 .6rem #222222;
         min-height: calc(var(--size-ratio) * 15);
+        padding-bottom: 10vmin;
     }
     
     .skill-card:not(:first-child){
