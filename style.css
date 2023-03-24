@@ -244,9 +244,10 @@ a {
 .codewars{
     width: 100%;
     display: grid;
-    grid-template: 20vmin 1fr / 30vmin 1fr;
+    grid-template: minmax(20vmin,auto) 1fr / 30vmin 1fr;
     place-items: center center;
     grid-column-gap: 15vmin;
+    grid-row-gap: var(--size-ratio);
     padding : 10vh 0;
 }
 
@@ -325,8 +326,7 @@ a {
     border-radius:.6rem 0 0 .6rem;
     border-right: solid var(--font-color);
     width:49%;
-    background-position: center;
-    background-size: cover;
+    object-fit: cover;
     transition: filter .4s linear;
 }
 
@@ -528,7 +528,7 @@ a {
 
 }
 /* tablet xtyles */
-@media (min-width: 520px) and (max-width: 920px){
+@media (min-width: 581px) and (max-width: 920px){
 
     .menu:hover{
         background: rgba(249,249,237,.6);
@@ -580,7 +580,7 @@ a {
     }
 }
 /* mobile styles */
-@media (max-width: 519px){
+@media (max-width: 580px){
 
     :root{
         --size-ratio : 1em;
