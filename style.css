@@ -475,7 +475,7 @@ a {
 }
 
 /* PC styles */
-@media (min-width: 921px){
+@media (min-width: 1101px){
 
     .menu:hover{
         background: rgba(249,249,237,.6);
@@ -496,6 +496,10 @@ a {
 
     .start__image-caption{
         width: 0;
+    }
+
+    .skill-card{
+        padding-bottom: 10vmin;
     }
 
     .skill-card:hover{
@@ -527,8 +531,81 @@ a {
     }
 
 }
+
+/* laptop xtyles */
+@media (min-width: 861px) and (max-width: 1100px){
+
+    .menu:hover{
+        background: rgba(249,249,237,.6);
+    }
+    
+    .menu:hover a{
+        color: var(--background-color);
+    }
+
+    .start__header, .start__text{
+        text-shadow:0 0 1px var(--background-color); ;
+    }
+
+    .start__image-container{
+        position: absolute;
+        right: 10%;
+    }
+
+    .start__image{
+        top:0;
+    }
+
+    .start__image-caption{
+        width: 0;
+    }
+
+    .skill-card{
+        width: 25%;
+    }
+
+    .skill-card:not(:first-child){
+        margin-left: -9%;
+    }
+
+    .skill-card:hover{
+        transform: rotate(3deg) translateY(-.5rem);
+    }
+    
+    .skill-card:hover>.skill-card__header{
+        color: var(--strong-color);
+    }
+    
+    .skill-card:hover~.skill-card{
+        transform: translateX(20%);
+    }
+
+    .project{
+        width: 95%;
+    }
+
+    .project:nth-child(2n){
+        flex-direction: row-reverse;
+        align-self: flex-end;
+    }
+
+    .project:nth-child(2n)>.project__image{
+        border-radius:0 .6rem .6rem 0;
+        border-left: solid var(--font-color);
+        border-right: none;
+    }
+    
+    .project:nth-child(2n)>.project__text-content{
+        border-left: 2px solid var(--font-color);
+        border-right: none;
+    }
+
+    .contact-me>h2{
+        font-size: calc(var(--size-ratio) * 8);
+    }
+}
 /* tablet xtyles */
-@media (min-width: 581px) and (max-width: 920px){
+@media (min-width: 581px) and (max-width: 860px){
 
     .menu:hover{
         background: rgba(249,249,237,.6);
